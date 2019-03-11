@@ -1,3 +1,6 @@
+// A function which returns total sum of a range
+
+
 function sumRange(start, end) { 
 let result=start;
 for (let index = 0; index < end-start; index++) {

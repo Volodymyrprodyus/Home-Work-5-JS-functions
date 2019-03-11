@@ -1,3 +1,6 @@
+// A function which prints the pyramid picture of size n
+
+
 function printPyramid(n){
 	for(let index = 0; index < n; index++) {
           let res = '';
