@@ -12,10 +12,18 @@
 
 
 function toUppercase(str) {
-    let res = '';
-    for(let index = 0; index <= str.length-1; index++){
-        res += String.fromCharCode(str.charCodeAt(index)-32);
+    let upperLetter = '';
+    for(let i = 0; i < str.length; i++){
+        let charAt = str.charCodeAt(i);
+        if (charAt >= 97 && charAt <= 122) {
+            upperLetter += String.fromCharCode(str.charCodeAt(i)-32);
+        }
+        else {
+            upperLetter += String.fromCharCode(charAt);  
+        }
+        
     }
-    return res;
+    return upperLetter;
   }
-  console.log(toUppercase('abc'));
+  console.log('toUppercase ', toUppercase('abc123'));
+
